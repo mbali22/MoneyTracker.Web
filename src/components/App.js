@@ -4,7 +4,7 @@ import LandingPage from './landingPage';
 class App extends React.Component{
     render(){
         return(            
-              <LandingPage />            
+              <LandingPage />                      
         );
     }
 }

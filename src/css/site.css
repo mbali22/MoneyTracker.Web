@@ -16,12 +16,22 @@
     justify-content: space-between;
     align-items: center;    
 }
+.dashboardHeading{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    border-bottom: tomato 1px solid;
+}
 .creddebContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: chocolate
+    background-color: chocolate;
+    /* height: 240px; */
+    width: 100%;
 }
 
 .expenseContainer{
@@ -29,19 +39,28 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color:aquamarine
+    background-color: aquamarine;
+    /* height: 240px; */
+    width: 100%;
 }
-lpbox{
-    border:1px solid slategray;
-    width:100px;
-    height:100px;
+
+.lpbox{
+    border: 1px solid slategray;
+    width: 14%;
+    height: 20%;
+    padding: 6.5%;
+    margin: 6.5%;
+    border-radius: 10px;
 }
-.dashboardHeading{
+
+
+.tabContainer{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    width:100%;    
-    border-bottom: tomato 1px solid;
-
-
+    height: 65px;
+    background: blue;
+    color: white;  
+    width: 100%;
 }
