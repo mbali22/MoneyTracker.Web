@@ -1,9 +1,12 @@
 import React from 'react';
-import {Route,IndexRoute} from 'react-router';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import App from './components/App';
 
 
 export default  (
-   <Route path="/" component={App} />     
-   
+    
+        <Switch>
+            <Route exact path="/" component={App} />
+        </Switch>
+    
 );
