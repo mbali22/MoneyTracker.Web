@@ -4,6 +4,6 @@ import { connectRouter } from 'connected-react-router';
 
 const rootReducer = (history) => combineReducers({
     router: connectRouter(history),
-    dashboard
+    dashboardInfo:dashboard
 });
 export default rootReducer;
