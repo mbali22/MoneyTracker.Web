@@ -1,5 +1,8 @@
 
- body, html {
+
+
+/* common css across site */
+body, html {
     background: #f5f5f5;
     display: flex;
     justify-content: center;    
@@ -9,6 +12,15 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     padding:0;
 }
+
+/* loading icon styles */
+.loading{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: lightgrey;
+}
+
 #app{
     width: 800px;
     height: 600px;

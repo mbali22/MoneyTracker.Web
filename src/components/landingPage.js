@@ -3,22 +3,29 @@ import Tabs from './common/Tabs';
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 import * as dashboardActions from "../actions/dashboardActions";
-
+import Loading from "./common/loading";
 
 
 
 class LandingPage extends React.Component{
     constructor(props){
         super(props)
+        this.state =  {
+            dashboardInfo:{}
+        }
     }
 
     componentDidMount() {
-        this.props.actions.loadDashboardInfo(); 
-    }
+        this.props.actions.loadDashboardInfo();     
+        
+    }    
 
-    render(){
-        let info = this.props.dashboardInfo;
-        return(                     
+    render(){     
+        console.log('rendering ');
+        let info = this.state.dashboardInfo;
+        return(      
+            (info && Object.keys(info).length === 0)?
+            <Loading /> :
             <div className="lpContainer">
                 <div className="dashboardHeading">
                     <h3>Dashboard</h3>
